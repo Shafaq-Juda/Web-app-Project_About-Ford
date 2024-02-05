@@ -6,5 +6,6 @@ get("/") do
 end
 
 get("/models")do
+  @model = params.fetch("models").downcase
   erb(:models)
 end

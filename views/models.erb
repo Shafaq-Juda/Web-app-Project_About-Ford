@@ -1,28 +1,35 @@
+<div id="body">
 <% if @model == "expedition" %>
     <h1>Expedition</h1>
-    <img src="/thumbnails/Expedition.jpg" alt="Expedition" width="250" />
+    <img src="/thumbnails/Expedition.jpg" alt="Expedition" width="250" id="car"/>
 <% elsif @model == "escape" %>
     <h1>Escape</h1>
-    <img src="/thumbnails/Escape.webp" alt="Escape" width="250" />
+    <img src="/thumbnails/Escape.webp" alt="Escape" width="300" id="car" />
 <% elsif @model == "explorer" %>
     <h1>Explorer</h1>
-    <img src="/thumbnails/Explorer.jpg" alt="Explorer" width="250" />
+    <img src="/thumbnails/Explorer.jpg" alt="Explorer" width="250" id="car" />
 <% elsif @model == "ecosport" %>
     <h1>EcoSport</h1>
-    <img src="/thumbnails/EcoSport.jpg" alt="EcoSport" width="250" />
+    <img src="/thumbnails/EcoSport.jpg" alt="EcoSport" width="250" id="car" />
 <% elsif @model == "mustang" %>
     <h1>Mustang</h1>
-    <img src="/thumbnails/Mustang.jpg" alt="Mustang" width="250" />
-<% elsif @model == "bronco sport" %>
+    <img src="/thumbnails/Mustang.jpg" alt="Mustang" width="250" id="car" />
+<% elsif @model == "bronco_sport" %>
     <h1>Bronco Sport</h1>
-    <img src="/thumbnails/Bronco Sport.jpg" alt="Bronco Sport" width="250" />
+    <img src="/thumbnails/Bronco Sport.jpg" alt="Bronco Sport" width="250" id="car" />
 <% elsif @model == "focus" %>
     <h1>Focus</h1>
-    <img src="/thumbnails/Focus.jpg" alt="Focus" width="250" />
+    <img src="/thumbnails/Focus.jpg" alt="Focus" width="250" id="car" />
 <% elsif @model == "maverick" %>
     <h1>Maverick</h1>
-    <img src="/thumbnails/Maverick.jpg" alt="Maverick" width="250" />
+    <img src="/thumbnails/Maverick.jpg" alt="Maverick" width="250" id="car" />
 <% elsif @model == "ranger_raptor" %>
     <h1>Ranger Raptor</h1>
-    <img src="/thumbnails/Ranger-Raptor.jpg" alt="Ranger-Raptor" width="250" />
+    <img src="/thumbnails/Ranger-Raptor.jpg" alt="Ranger-Raptor" width="250" id="car" />
 <% end %>
+
+<br />
+<form action="/" method="get">
+<button id="goBack">Go Back</button>
+</form>
+</div>

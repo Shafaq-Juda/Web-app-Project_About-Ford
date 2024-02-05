@@ -4,12 +4,53 @@
     <title>About Ford</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <style>
+        #body{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          padding-top: 2em;
+        }
+
+        #footer{
+          position: absolute;
+          bottom: 0;
+         left: 50%;            /* Position the left edge of the footer at the middle of the page */
+         transform: translateX(-50%); /* Shift the footer left by half its width to center it */
+         height: 2.5rem;
+         font-size: 10px;
+        }
+
+        #goBack{
+          border-radius: 2em;
+          background-color: #77a8e5;
+        }
+
+        #view{
+          background-color: #000000;
+          color:#ffffff;
+        }
+
+        h1{
+          font-family: calibri;
+        }
+
+        #car{
+          box-shadow: 5px 5px 2px grey;
+        }
+    </style>
   </head>
 
   <body>
-    <img src="/thumbnails/Logo.png" alt="Logo" width="250"/>
+  <div id="body">
+    <div class="1-item"> <a href="/"> <img src="/thumbnails/Logo.png" alt="Logo" width="450"/> </a> </div>
     <%= yield %>
+  
   </body>
 
-  <footer>Ford Logo is the trademark of Ford Motor Company.</footer>
+  <footer><div id="footer"> Ford Logo is the trademark of Ford Motor Company.</div> </footer>
+  </div>
+
 </html>
